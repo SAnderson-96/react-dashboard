@@ -13,7 +13,8 @@ const initialValues = {
   address2: "",
 };
 
-const phoneRegex = /^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$/;
+const phoneRegex =
+  /^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$/;
 
 const userSchema = yup.object().shape({
   firstName: yup.string().required("required"),
@@ -156,7 +157,7 @@ function Form() {
               />
             </Box>
 
-            <Box display='flex' justifyContent='end' mt='20px'>
+            <Box display="flex" justifyContent="end" mt="20px">
               <Button type="submit" color="secondary" variant="contained">
                 Create New User
               </Button>
